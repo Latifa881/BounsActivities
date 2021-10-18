@@ -16,4 +16,11 @@
         android:fontFamily="casual"
         android:text="Recycler View Activity"
         android:textSize="24sp"/>
+    <Button
+        android:id="@+id/MultipleActivities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Multiple Activities"
+        android:textSize="24sp"/>
 </LinearLayout>

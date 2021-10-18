@@ -1,13 +1,12 @@
 package com.example.recyclerviewactivitybonus
 
-import android.telecom.Call
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_row.view.*
 
-class RecyclerViewAdapter (private val details:ArrayList<MainActivity2.details>): RecyclerView.Adapter<RecyclerViewAdapter.ItemViewHolder>(){
+class RecyclerViewAdapter (private val details:ArrayList<details>): RecyclerView.Adapter<RecyclerViewAdapter.ItemViewHolder>(){
     class ItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     }

@@ -11,8 +11,12 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
         val btRecyclerView=findViewById<Button>(R.id.btRecyclerView)
+        val MultipleActivities=findViewById<Button>(R.id.MultipleActivities)
         btRecyclerView.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,RecyclerViewActivity1::class.java))
+        }
+        MultipleActivities.setOnClickListener {
+            startActivity(Intent(this,MultipleActivities_SignIn::class.java))
         }
     }
 }

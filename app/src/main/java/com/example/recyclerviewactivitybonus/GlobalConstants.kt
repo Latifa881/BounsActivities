@@ -2,6 +2,7 @@ package com.example.recyclerviewactivitybonus
 
 class GlobalConstants {
     companion object{
-        val detailsArray=ArrayList<MainActivity2.details>()
+        val detailsArray=ArrayList<details>()
+        val detailsArray2=ArrayList<details>()
     }
 }

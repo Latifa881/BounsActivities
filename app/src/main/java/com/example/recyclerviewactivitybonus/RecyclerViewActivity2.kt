@@ -2,11 +2,10 @@ package com.example.recyclerviewactivitybonus
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity2 : AppCompatActivity() {
+class RecyclerViewActivity2 : AppCompatActivity() {
     lateinit var rvMain: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +21,7 @@ class MainActivity2 : AppCompatActivity() {
 
         rvMain.adapter = RecyclerViewAdapter(GlobalConstants.detailsArray)
         rvMain.layoutManager = LinearLayoutManager(this)
-        GlobalConstants.detailsArray.add(MainActivity2.details(name!!,location!!,phone!!,email!!))
+        GlobalConstants.detailsArray.add(details(name!!,location!!,phone!!,email!!))
         rvMain.adapter!!.notifyDataSetChanged()
         //actionbar
         val actionbar = supportActionBar
@@ -38,5 +37,5 @@ class MainActivity2 : AppCompatActivity() {
         onBackPressed()
         return true
     }
-    public data class details(val name:String,val location:String,val phone:String,val email:String)
+
 }

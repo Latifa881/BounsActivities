@@ -10,7 +10,7 @@ import android.text.TextUtils
 import android.util.Patterns
 
 
-class MainActivity : AppCompatActivity() {
+class RecyclerViewActivity1 : AppCompatActivity() {
     lateinit var etName: EditText
     lateinit var etLocation: EditText
     lateinit var etPhone: EditText
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             val email = etEmail.text.toString()
             if (name.isNotEmpty() && location.isNotEmpty() && phone.isNotEmpty() && email.isNotEmpty()) {
                 if (isValidEmail(email)) {
-                    val intent = Intent(this, MainActivity2::class.java)
+                    val intent = Intent(this, RecyclerViewActivity2::class.java)
                     intent.putExtra("Name", name)
                     intent.putExtra("Location", location)
                     intent.putExtra("Phone", phone)
