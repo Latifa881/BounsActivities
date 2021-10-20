@@ -23,4 +23,11 @@
         android:fontFamily="casual"
         android:text="Multiple Activities"
         android:textSize="24sp"/>
+    <Button
+        android:id="@+id/FacebookUi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Facebook"
+        android:textSize="24sp"/>
 </LinearLayout>

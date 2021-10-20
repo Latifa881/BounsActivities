@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewActivityBonus">
         <activity
+            android:name=".FacebookActivity"
+            android:exported="true" />
+        <activity
             android:name=".MultipleActivities_ShowDetails"
             android:exported="true" />
         <activity
